@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="countries_res">
+        <item>Cambodia</item>
+        <item>Veitnam</item>
+        <item>Thailand</item>
+        <item>Korea</item>
+        <item>China</item>
+        <item>Lao</item>
+    </string-array>
+</resources>
