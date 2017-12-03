@@ -11,6 +11,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.rathana.ui_components.dialog.DatePickerDialogCalendar;
+import com.example.rathana.ui_components.dialog.DatePickerDialogSpinner;
+import com.example.rathana.ui_components.dialog.TimePickerDialogClock;
+import com.example.rathana.ui_components.dialog.TimePickerDialogSpinner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -93,5 +96,16 @@ public class AdvancedUIActivity extends AppCompatActivity
     public void onPickDate(int day, int month, int year) {
         String date=""+day+"/" + month+"/"+year;
         dateFormat.setText(date);
+    }
+
+    public void onDatePickerSpinnerView(View view) {
+        new DatePickerDialogSpinner().show(getFragmentManager(),"spinner");
+    }
+    public void onTimePickerClockView(View view) {
+        new TimePickerDialogClock().show(getFragmentManager(),"time picker Clock view");
+    }
+
+    public void onTimePickerSpinnerView(View view) {
+        new TimePickerDialogSpinner().show(getFragmentManager(),"Time spinner");
     }
 }
