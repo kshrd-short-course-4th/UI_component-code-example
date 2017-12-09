@@ -65,28 +65,28 @@
         app:layout_constraintTop_toBottomOf="@+id/classSpinner">
 
         <CheckBox
+            android:id="@+id/javaCk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Java"
-            android:id="@+id/javaCk"/>
+            android:text="Java" />
 
         <CheckBox
+            android:id="@+id/oopCk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OOP"
-            android:id="@+id/oopCk"/>
+            android:text="OOP" />
 
         <CheckBox
+            android:id="@+id/springck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Spring"
-            android:id="@+id/springck"/>
+            android:text="Spring" />
 
         <CheckBox
+            android:id="@+id/htmlCk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="HTML"
-            android:id="@+id/htmlCk"/>
+            android:text="HTML" />
 
     </LinearLayout>
 
@@ -114,6 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_marginStart="10dp"
+        android:onClick="onGetStartTime"
         android:text="Start"
         app:layout_constraintBaseline_toBaselineOf="@+id/startTimeTv"
         app:layout_constraintStart_toEndOf="@+id/startTimeTv" />
@@ -124,9 +125,23 @@
         android:layout_height="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:onClick="onGetEndTime"
         android:text="End"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:onClick="onSaveStudentEnroll"
+        android:text="Save"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnd" />
 </android.support.constraint.ConstraintLayout>

@@ -1,5 +1,7 @@
 package com.example.rathana.ui_components.enitiy;
 
+import java.util.List;
+
 /**
  * Created by RATHANA on 12/3/2017.
  */
@@ -8,7 +10,7 @@ public class StudentEnroll {
 
     private int studentId;
     private String className;
-    private String[] subject;
+    private List<String> subject;
     private String startTime;
     private String endTime;
 
@@ -28,11 +30,11 @@ public class StudentEnroll {
         this.className = className;
     }
 
-    public String[] getSubject() {
+    public List<String> getSubject() {
         return subject;
     }
 
-    public void setSubject(String[] subject) {
+    public void setSubject(List<String> subject) {
         this.subject = subject;
     }
 
@@ -50,5 +52,16 @@ public class StudentEnroll {
 
     public void setEndTime(String endTime) {
         this.endTime = endTime;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentEnroll{" +
+                "studentId=" + studentId +
+                ", className='" + className + '\'' +
+                ", subject=" + subject +
+                ", startTime='" + startTime + '\'' +
+                ", endTime='" + endTime + '\'' +
+                '}';
     }
 }
